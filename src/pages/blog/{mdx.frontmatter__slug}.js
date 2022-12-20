@@ -17,12 +17,15 @@ export const query = graphql`
     mdx(id: {eq: $id}) {
       frontmatter {
         title
+        description
         date(formatString: "MMMM D, YYYY")
       }
     }
   }
 `
 
-export const Head = () => <Seo title="Blog Posts" />
+export const Head = ({data}) => <Seo
+  title={data.mdx.frontmatter.title}
+  description={data.mdx.frontmatter.description} />
 
 export default BlogPost
