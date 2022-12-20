@@ -16,7 +16,7 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
-    {
+    /*{
       resolve: `gatsby-plugin-manifest`,
         options: {
           name: `My Blog`,
@@ -29,6 +29,6 @@ module.exports = {
           icon: `src/images/icon.png`,
         },
       },
-      "gatsby-plugin-offline",
+      "gatsby-plugin-offline",*/
   ],
 }
